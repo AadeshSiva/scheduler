@@ -1,0 +1,220 @@
+ * {
+     padding: 0;
+     margin: 0;
+     -webkit-tap-highlight-color: transparent;
+     user-select: none;
+ }
+
+ marquee {
+     font-size: smaller;
+     display: block;
+     margin-top: 2px;
+     font-family: 'Gill Sans', sans-serif;
+ }
+
+ ::-webkit-scrollbar {
+     color: transparent;
+ }
+
+ input,
+ textarea,
+ button,
+ select {
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+
+
+ a,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     text-decoration: none;
+     margin: 0;
+     padding: 0;
+     white-space: nowrap;
+ }
+
+ a {
+     color: white;
+ }
+
+ @font-face {
+     font-family: 'regm';
+     src: url(asserts/regmedi.otf);
+ }
+
+ body {
+     background-color: rgb(22, 22, 22);
+     color: white;
+ }
+
+ /* ---------------------------------------------------------------------------ASIDE----- */
+ aside {
+     height: 100dvh;
+     width: 100vw;
+     position: fixed;
+     top: 0;
+     z-index: 100;
+     background-color: rgb(21, 21, 21);
+     /* display: none; */
+ }
+
+ aside h1 {
+     font-family: regm;
+     font-size: 2.5em;
+     margin: 7em 0.5em 0.2em 1em;
+ }
+
+ aside p {
+     font-family: regm;
+     font-size: large;
+     margin: 0 0.5em 0.2em 2.4em;
+     color: rgb(165, 165, 165);
+ }
+
+ aside p strong {
+     color: white;
+     font-weight: 500;
+
+ }
+
+ aside input {
+     outline: none;
+     border: none;
+     font-size: x-large;
+     font-family: regm;
+     margin: 0.5em 0.5em 0.2em 1.7em;
+     padding: 0.2em;
+     color: white;
+     background-color: transparent;
+     border-bottom: 1px solid #717171;
+ }
+
+ aside input::placeholder {
+     font-size: x-large;
+     font-family: regm;
+     color: #3a3a3aa1;
+
+ }
+
+ aside .copy {
+     position: absolute;
+     bottom: 20vw;
+     color: white;
+     font-family: regm;
+     margin-left: 4em;
+     font-size: x-small;
+     padding: 0.5em 1.5em;
+     border-radius: 30px;
+     background: linear-gradient(to left, rgb(35, 35, 35), rgb(41, 41, 41));
+ }
+
+ /* ---------------------------------------------------------------------------NAV----- */
+
+ nav {
+     padding: 2.5em 1.7em 2em 2.2em;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ nav .logo {
+     height: 1.5em;
+ }
+
+ .addtask {
+     color: white;
+     font-family: regm;
+     font-size: small;
+     padding: 0.5em 1em;
+     border-radius: 30px;
+     background: linear-gradient(to left, #232323, #292929);
+     display: flex;
+     align-items: center;
+     gap: 0.5em;
+ }
+
+ .addtask green {
+     color: #36a436;
+ }
+
+ /* ---------------------------------------------------------------------------MAIN----- */
+ main {
+     display: flex;
+     overflow-x: scroll;
+     flex-shrink: 0;
+     scroll-snap-type: x mandatory;
+ }
+
+ /* ------------------------------------------------------------------------SECTION----- */
+
+ section {
+     width: 100vw;
+     flex-shrink: 0;
+     scroll-snap-align: start;
+     scroll-snap-stop: always;
+     /* background-color: #36a436; */
+ }
+
+ /* ------------------------------------------------------------------------HEADER----- */
+ header {
+     padding: 0 7vw 1.5em 7vw;
+     /* background-color: #ccaf45; */
+ }
+
+ header h1 {
+     font-family: regm;
+     font-size: 2.5em;
+     letter-spacing: 2px;
+     color: gray;
+ }
+
+ header p {
+     margin-top: 0.2em;
+     letter-spacing: 0.3px;
+     word-spacing: 0.7px;
+     font-size: small;
+     line-height: 1.5em;
+     color: #ffffff;
+ }
+
+ /* ----------------------------------------------------------------------------UL------ */
+ ul {
+     height: 65vh;
+     list-style: none;
+     padding: 0 1.5em;
+     overflow-y: scroll;
+     scroll-snap-type: y mandatory;
+ }
+
+ li {
+     padding: 1em 0;
+     border-bottom: 1px solid rgb(211, 211, 211);
+     display: flex;
+     flex-direction: row;
+     scroll-snap-align: start;
+     /* scroll-snap-stop: always; */
+ }
+
+ li .info {
+     padding: 0 1em 0 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: regm;
+     border-right: 1px solid rgb(211, 211, 211);
+     gap: 0.3em;
+ }
+
+ li .info h1 {
+     font-size: 3em;
+     rotate: -90deg;
+ }
+
+ li .info p {
+     color: gray;
+ }
