@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="asserts/green.svg" type="image/svg+xml">
+    <link rel="icon" href="asserts/green.svg" type="image/x-icon">
     <title>AS Schedular</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,9 +17,17 @@
             autocomplete="off">
         <p class="copy">&copy; Aadesh Siva</p>
     </aside>
+    <article id="article">
+        <p>New task 🔥</p>
+        <span class="taskinputcon">
+            <input type="text" name="title" id="title" placeholder="Write in short">
+            <p>+ Add</p>
+        </span>
+
+    </article>
     <nav>
         <img src="asserts/logo.svg" alt="" class="logo">
-        <p class="addtask" id="addtask">
+        <p onclick="addtask()" class="addtask" id="addtaskbtn">
             <green>+</green>Add task
         </p>
     </nav>
