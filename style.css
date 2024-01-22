@@ -142,6 +142,10 @@
      color: #36a436;
  }
 
+ .addtask red {
+     color: red;
+ }
+
  /* ---------------------------------------------------------------------------MAIN----- */
  main {
      display: flex;
@@ -217,4 +221,55 @@
 
  li .info p {
      color: gray;
+ }
+
+ /* ------------------------------------------------fieldset----------------------------------------- */
+
+ article {
+     margin: 0 5vw;
+     width: 82vw;
+     position: fixed;
+     top: 6em;
+     font-family: regm;
+     padding: 4vw;
+     background-color: #ffffff;
+     display: none;
+     flex-direction: column;
+     border-radius: 10px;
+ }
+
+ article .close {
+     position: absolute;
+     right: 1em;
+     font-size: small;
+     padding: 0.5em;
+     background-color: #232323;
+ }
+
+ article p {
+     color: black;
+     font-family: regm;
+     margin: 0.5em;
+ }
+
+ article .taskinputcon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ article input {
+     padding: 0.5em 1em;
+     outline: none;
+     border: none;
+     background-color: black;
+     color: white;
+     font-size: medium;
+     border-radius: 30px;
+ }
+
+ article .taskinputcon p {
+     padding: 0.4em 1em;
+     border-radius: 30px;
+     background-color: #dbdbdb;
  }
